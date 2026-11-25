@@ -489,3 +489,26 @@ html { overflow-x: clip; }
     background: linear-gradient(180deg, rgba(7,21,48,.7) 0%, rgba(7,21,48,0) 14%, rgba(7,21,48,.1) 24%, rgba(7,21,48,.8) 40%, rgba(7,21,48,.96) 62%, var(--navy-950) 100%);
   }
 }
+
+/* ---------- Precios, grupos, dirección y redes ---------- */
+.groups { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 18px; color: var(--navy); }
+.groups span { padding: 6px 12px; border-radius: 999px; background: var(--navy); color: var(--yellow); font-weight: 800; font-size: .85rem; }
+.prices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.price { padding: 14px 8px; border-radius: 14px; background: var(--soft); border: 1px solid #E2E8F2; text-align: center; }
+.price small { display: block; font-size: .7rem; font-weight: 800; letter-spacing: .06em; white-space: nowrap; text-transform: uppercase; color: var(--muted); }
+.price strong { display: block; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.8rem, 6vw, 2.4rem); color: var(--navy); line-height: 1.1; }
+.price span { display: block; font-size: .8rem; color: var(--green); font-weight: 700; line-height: 1.3; }
+.price--hl { background: var(--yellow); border-color: var(--yellow); }
+.price--hl span { color: var(--navy-900); }
+.pay { margin: 12px 0 20px; color: #2C3a55; font-size: .95rem; }
+a.place { text-decoration: none; align-items: flex-start; padding: 14px 16px; border-radius: 14px; border: 1px solid #E2E8F2; transition: background .2s, border-color .2s; flex-wrap: nowrap; }
+a.place:hover { background: var(--soft); border-color: var(--green); }
+a.place .ico { margin-top: 2px; }
+a.place em { display: block; font-style: normal; color: var(--green); font-weight: 800; font-size: .9rem; margin-top: 2px; }
+.socials { display: flex; gap: 10px; margin-top: 16px; }
+.socials a { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: var(--navy); color: var(--white); transition: background .2s, color .2s, transform .2s; }
+.socials a:hover { background: var(--yellow); color: var(--navy-900); transform: translateY(-2px); }
+.socials .ico { width: 22px; height: 22px; }
+.footer__addr { text-decoration: none; }
+.footer__addr:hover { color: var(--yellow); text-decoration: underline; }
+.faq details a { color: var(--green); font-weight: 700; }

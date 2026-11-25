@@ -324,7 +324,7 @@
         <div class="book__copy">
           <p class="kicker reveal">Horarios y precio</p>
           <h2 class="title reveal">Tu primera clase <span class="hl">por $<span data-price>100</span>.</span></h2>
-          <p class="reveal">Ven a conocer al grupo y vive una sesión completa: activación, parte principal y vuelta a la calma. Escríbenos por WhatsApp, te compartimos los horarios disponibles y apartamos tu lugar.</p>
+          <p class="reveal">Ven a la clase muestra, vive la experiencia completa (activación, parte principal y vuelta a la calma) y decide si te integras. Escríbenos por WhatsApp y apartamos tu lugar.</p>
 
           <div class="schedule reveal" id="schedule" aria-live="polite">
             <!-- Se llena desde js/config.js -->
@@ -334,11 +334,25 @@
             </div>
           </div>
 
-          <p class="place reveal">
+          <p class="groups reveal"><strong>Grupos:</strong> <span>Categoría libre</span> <span>Jóvenes</span></p>
+
+          <div class="prices reveal" aria-label="Precios">
+            <div class="price"><small>Mensualidad</small><strong>$850</strong><span>Turno matutino</span></div>
+            <div class="price"><small>Mensualidad</small><strong>$680</strong><span>Turno nocturno</span></div>
+            <div class="price price--hl"><small>Por clase</small><strong>$100</strong><span>Muestra o suelta</span></div>
+          </div>
+          <p class="pay reveal">Pago en <strong>efectivo</strong> o <strong>transferencia</strong>.</p>
+
+          <a class="place reveal" data-link="googleMaps" href="#" target="_blank" rel="noopener" aria-label="Abrir ubicación en Google Maps">
             <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
-            <span data-ubicacion>El Pueblito, Corregidora, Querétaro</span>
-            <a data-link="googleMaps" href="#" target="_blank" rel="noopener">Ver mapa</a>
-          </p>
+            <span><span data-ubicacion>Rivera del Río, Col. Camino al Cerrito 37, El Pueblito, 76900, Querétaro, Qro.</span><em>Abrir en Google Maps →</em></span>
+          </a>
+
+          <div class="socials reveal" aria-label="Redes sociales">
+            <a data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram de Cariocas"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
+            <a data-link="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook de Cariocas"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
+            <a data-link="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok de Cariocas"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+          </div>
         </div>
 
         <aside class="ticket reveal" aria-label="Primera clase">
@@ -372,7 +386,11 @@
           </details>
           <details class="reveal">
             <summary>¿Cuánto cuesta la primera clase?</summary>
-            <p>$100 pesos. Agéndala por WhatsApp y te compartimos los horarios disponibles.</p>
+            <p>$100 pesos. Es una clase muestra para que vivas la experiencia del entrenamiento y decidas si te integras. Después puedes seguir pagando por clase ($100) o con mensualidad: $850 en turno matutino o $680 en turno nocturno. Aceptamos efectivo y transferencia.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué horarios tienen?</summary>
+            <p>Turno matutino: lunes, miércoles y viernes de 6:30 a 8:00 am. Turno nocturno: martes y jueves de 8:30 a 9:45 pm. Hay grupos de categoría libre y de jóvenes.</p>
           </details>
           <details class="reveal">
             <summary>¿Cómo es una sesión?</summary>
@@ -392,7 +410,7 @@
           </details>
           <details class="reveal">
             <summary>¿Dónde entrenan?</summary>
-            <p>En El Pueblito, Corregidora, Querétaro. Escríbenos por WhatsApp y te mandamos la ubicación exacta.</p>
+            <p>En Rivera del Río, Col. Camino al Cerrito 37, El Pueblito, 76900, Querétaro. <a data-link="googleMaps" href="#" target="_blank" rel="noopener">Ábrelo en Google Maps</a>.</p>
           </details>
         </div>
       </div>
@@ -417,7 +435,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <img src="assets/opt/logo-192.png" width="64" height="64" loading="lazy" alt="Escudo de Cariocas Funcional Effect">
-        <div><strong>Cariocas F.C.</strong><span>Cariocas Funcional Effect</span><span data-ubicacion>El Pueblito, Corregidora, Querétaro</span></div>
+        <div><strong>Cariocas F.C.</strong><span>Cariocas Funcional Effect</span><a class="footer__addr" data-link="googleMaps" href="#" target="_blank" rel="noopener"><span data-ubicacion>Rivera del Río, Col. Camino al Cerrito 37, El Pueblito, Qro.</span></a></div>
       </div>
       <nav class="footer__links" aria-label="Secciones">
         <a href="#nosotros">Nosotros</a><a href="#clases">Clases</a><a href="#entrenadores">Entrenadores</a><a href="#horarios">Horarios</a><a href="#preguntas">Preguntas</a>
